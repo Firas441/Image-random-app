@@ -5,10 +5,7 @@ using System.Windows.Controls;
 
 
 namespace Weenove_application
-/// <summary>
-/// Interaction logic for MainWindow.xaml
 {
-    /// </summary>
     public partial class MainWindow : Window
     {
         public const int RANDOM_IMAGES_NUMBER = 10;
@@ -25,7 +22,7 @@ namespace Weenove_application
             List<Image> imageViewersList = new();
             Image img;
 
-            for (int i = 2; i < RANDOM_IMAGES_NUMBER + 2; i++)
+            for (int i = 1; i < RANDOM_IMAGES_NUMBER + 1; i++)
             {
                 img = ((Image)this.FindName(String.Concat("ImageViewer", i.ToString())));
                 imageViewersList.Add(img);
@@ -37,7 +34,7 @@ namespace Weenove_application
         private void BrowseButton_Click(object sender, RoutedEventArgs e)
         {
             List<Image> localImageViewers = new();
-            localImageViewers.Add(ImageViewer1);
+            localImageViewers.Add(ImageViewer11);
             DisplayImage displayLocalImage = new DisplayImage(new DisplayLocalImagesOperation());
             displayLocalImage.displayImage(localImageViewers, ExceptionText);
         }

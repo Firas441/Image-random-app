@@ -11,7 +11,8 @@
         <Button Content="Browse a File" Height="34" HorizontalAlignment="Left" Margin="800,8,0,0" Name="BrowseButton" VerticalAlignment="Top" Width="119" Foreground="Maroon" FontSize="16" FontFamily="Georgia" Click="BrowseButton_Click" />
         <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Height="450" Width="900" HorizontalAlignment="Left" Margin="20,55,0,0" VerticalAlignment="Top">
             <StackPanel x:Name="myStackPanel" Orientation="Horizontal" VerticalAlignment="Top" >
-                <Image Height="400" Width="500" x:Name="ImageViewer1" Stretch="Fill" Margin="0,0,10,0" Visibility="Collapsed"/>
+                <Image Height="400" Width="500" x:Name="ImageViewer11" Stretch="Fill" Margin="0,0,10,0" Visibility="Collapsed"/>
+                <Image Height="400" Width="500" x:Name="ImageViewer1" Stretch="Fill" Margin="0,0,10,0" />
                 <Image Height="400" Width="500" x:Name="ImageViewer2" Stretch="Fill" Margin="0,0,10,0" />
                 <Image Height="400" Width="500" x:Name="ImageViewer3" Stretch="Fill" Margin="0,0,10,0" />
                 <Image Height="400" Width="500" x:Name="ImageViewer4" Stretch="Fill" Margin="0,0,10,0" />
@@ -21,7 +22,6 @@
                 <Image Height="400" Width="500" x:Name="ImageViewer8" Stretch="Fill" Margin="0,0,10,0" />
                 <Image Height="400" Width="500" x:Name="ImageViewer9" Stretch="Fill" Margin="0,0,10,0" />
                 <Image Height="400" Width="500" x:Name="ImageViewer10" Stretch="Fill" Margin="0,0,10,0" />
-                <Image Height="400" Width="500" x:Name="ImageViewer11" Stretch="Fill" Margin="0,0,10,0" />
             </StackPanel>
         </ScrollViewer>
     </Grid>
