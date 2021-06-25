@@ -6,11 +6,11 @@ using System.Windows.Controls;
 
 namespace Weenove_application
 {
-    public class DisplayLocalImage : IDisplayImageOperation
+    public class DisplayLocalImagesOperation : IDisplayImageOperation
     {
         private OpenFileDialog dialog;
         private string selectedImagePath;
-        public DisplayLocalImage()
+        public DisplayLocalImagesOperation()
         {
             dialog = new OpenFileDialog();
             dialog.InitialDirectory = "c:\\";

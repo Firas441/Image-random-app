@@ -6,13 +6,13 @@ using System.Windows.Controls;
 
 namespace Weenove_application
 {
-    class DisplayApiImages : IDisplayImageOperation
+    class DisplayApiImagesOperation : IDisplayImageOperation
     {
         private const string apiUrl = "https://api.unsplash.com/photos/random";
         private const string accessKey = "w_K5GW0rp9aUFCFkqgyv77jgj6MCdnIM8Vv17Vh1I98";
         private int imageCountParameter;
         private List<String> imagePathList { get; set; }
-        public DisplayApiImages(int imageCountParameter)
+        public DisplayApiImagesOperation(int imageCountParameter)
         {
             this.imageCountParameter = imageCountParameter;
             imagePathList = new();

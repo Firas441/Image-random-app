@@ -16,7 +16,7 @@ namespace Weenove_application
         public MainWindow()
         {
             InitializeComponent();
-            DisplayImage displayRandomImages = new DisplayImage(new DisplayApiImages(RANDOM_IMAGES_NUMBER));
+            DisplayImage displayRandomImages = new DisplayImage(new DisplayApiImagesOperation(RANDOM_IMAGES_NUMBER));
             displayRandomImages.displayImage(getWebImageViewers(), ExceptionText);
         }
 
@@ -38,7 +38,7 @@ namespace Weenove_application
         {
             List<Image> localImageViewers = new();
             localImageViewers.Add(ImageViewer1);
-            DisplayImage displayLocalImage = new DisplayImage(new DisplayLocalImage());
+            DisplayImage displayLocalImage = new DisplayImage(new DisplayLocalImagesOperation());
             displayLocalImage.displayImage(localImageViewers, ExceptionText);
         }
     }
