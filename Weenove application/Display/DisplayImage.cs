@@ -14,16 +14,9 @@ namespace Weenove_application
             this.displayImageOperation = displayImageOperation;
         }
 
-        public void displayImage(Image imageViewer, Label FileNameLabel) 
+        public void displayImage(List<Image> imageViewerList, TextBlock exceptionText)
         {
-            if(displayImageOperation.GetType() == typeof(DisplayLocalImage))
-                displayImageOperation.displayImage(imageViewer,FileNameLabel);
-        }
-
-        public void displayImage(List<Image> imageViewerList)
-        {
-            if (displayImageOperation.GetType() == typeof(DisplayApiImages))
-                displayImageOperation.displayImage(imageViewerList);
+            displayImageOperation.displayImage(imageViewerList, exceptionText);
         }
 
         public static BitmapImage generateBitmap(string uri)

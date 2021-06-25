@@ -5,7 +5,6 @@ namespace Weenove_application
 {
     public interface IDisplayImageOperation
     {
-        public void displayImage(List<Image> imageViewerList);
-        public void displayImage(Image imageViewer, Label FileNameLabel);
+        public void displayImage(List<Image> imageViewerList, TextBlock exceptionText);
     }
 }

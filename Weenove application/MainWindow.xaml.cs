@@ -17,7 +17,7 @@ namespace Weenove_application
         {
             InitializeComponent();
             DisplayImage displayRandomImages = new DisplayImage(new DisplayApiImages(RANDOM_IMAGES_NUMBER));
-            displayRandomImages.displayImage(getWebImageViewers());
+            displayRandomImages.displayImage(getWebImageViewers(), ExceptionText);
         }
 
         public List<Image> getWebImageViewers()
@@ -36,8 +36,10 @@ namespace Weenove_application
 
         private void BrowseButton_Click(object sender, RoutedEventArgs e)
         {
+            List<Image> localImageViewers = new();
+            localImageViewers.Add(ImageViewer1);
             DisplayImage displayLocalImage = new DisplayImage(new DisplayLocalImage());
-            displayLocalImage.displayImage(ImageViewer1,FileNameLabel);
+            displayLocalImage.displayImage(localImageViewers, ExceptionText);
         }
     }
 }
