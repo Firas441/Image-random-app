@@ -27,31 +27,6 @@ namespace Weenove_application
             displayLocalImage.displayImage(getLocalImageViewersRecursive(0), ExceptionText);
         }
 
-        public List<Image> getWebImageViewers()
-        {
-            List<Image> imageViewersList = new();
-            for (int i = 0; i < RANDOM_IMAGES_NUMBER; i++)
-            {
-                Image img = initImage();
-                myStackPanel.Children.Add(img);
-                imageViewersList.Add(img);
-            }
-            return imageViewersList;
-        }
-
-        public List<Image> getLocalImageViewers()
-        {
-            List<Image> imageViewersList = new();
-            for (int i = 0; i < LOCAL_IMAGES_NUMBER; i++)
-            {
-                Image img = initImage();
-                img.Visibility = Visibility.Collapsed;
-                myStackPanel.Children.Insert(0,img);
-                imageViewersList.Add(img);
-            }
-            return imageViewersList;
-        }
-
         public List<Image> getWebImageViewersRecursive(int listCount)
         {
             if (listCount == RANDOM_IMAGES_NUMBER)
