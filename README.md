@@ -1,4 +1,3 @@
-# Weenove-application
 <h1>Pré-requis</h1>
 Le package NuGet Newtonsoft.Json doit être installé dans VS afin de convertir la réponse JSON de la requête http en objet RandomImageJson.
 <h1>API Unsplash</h1>
